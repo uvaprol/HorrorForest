@@ -1,0 +1,135 @@
+[gd_scene load_steps=8 format=3 uid="uid://cdsotn4nv0bie"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uc1xx"]
+albedo_color = Color(0.31797647, 0.16336387, 0.032029476, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_brfkd"]
+albedo_color = Color(0.31764707, 0.42352942, 0.24313726, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nnvrw"]
+albedo_color = Color(0.31764707, 0.42352942, 0.24313726, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gvmkm"]
+albedo_color = Color(0.31764707, 0.42352942, 0.24313726, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2g23"]
+albedo_color = Color(0.31764707, 0.42352942, 0.24313726, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_44ud8"]
+albedo_color = Color(0.31912366, 0.4224047, 0.24489641, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ind6k"]
+height = 2.3654785
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.30908203, 0)
+height = 2.625
+cone = true
+material = SubResource("StandardMaterial3D_uc1xx")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(0.0019024648, 0.74322516, 0.66903865, -5.3435603e-09, 0.66903985, -0.7432265, -0.99999815, 0.0014139637, 0.0012728311, 0.42350543, 0.60854477, -0.006778702)
+radius = 0.09033203
+height = 0.8881836
+cone = true
+material = SubResource("StandardMaterial3D_uc1xx")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(0.9793288, 0.15033573, 0.1353296, -1.5384956e-09, 0.6690398, -0.74322647, -0.20227444, 0.72786313, 0.6552099, 0.06739572, 0.87482506, 0.270026)
+radius = 0.09033203
+height = 0.8881836
+cone = true
+material = SubResource("StandardMaterial3D_uc1xx")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(-0.9950626, -0.07376543, -0.06640223, -5.431569e-08, 0.6690399, -0.74322647, 0.0992502, -0.73955685, -0.6657366, -0.04970193, 0.8623931, -0.3646742)
+radius = 0.09033203
+height = 0.8881836
+cone = true
+material = SubResource("StandardMaterial3D_uc1xx")
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(-0.042520974, -0.74255425, -0.6684348, -2.6489973e-08, 0.66903996, -0.74322665, 0.9990956, -0.031602707, -0.02844831, -0.42616445, 0.6902755, 0.009241775)
+radius = 0.09033203
+height = 0.8881836
+cone = true
+material = SubResource("StandardMaterial3D_uc1xx")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGCylinder3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6945486, 0)
+radius = 0.7044178
+material = SubResource("StandardMaterial3D_brfkd")
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="CSGCylinder3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2875966, -0.7953696)
+radius = 0.4699881
+material = SubResource("StandardMaterial3D_nnvrw")
+
+[node name="CSGSphere3D3" type="CSGSphere3D" parent="CSGCylinder3D"]
+transform = Transform3D(0.9450402, 0, 0.326954, 0, 1, 0, -0.326954, 0, 0.9450402, 0.2559993, 1.347874, 0.72609824)
+radius = 0.5025307
+material = SubResource("StandardMaterial3D_gvmkm")
+
+[node name="CSGSphere3D4" type="CSGSphere3D" parent="CSGCylinder3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96792436, 1.1580609, -0.05413562)
+radius = 0.6072075
+material = SubResource("StandardMaterial3D_d2g23")
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(-0.72217107, -0.5141008, -0.46278465, -1.3588579e-09, 0.66903996, -0.74322665, 0.69171476, -0.53673655, -0.4831612, -0.349419, 0.23994064, -0.4127103)
+radius = 0.09033203
+height = 0.8881836
+cone = true
+material = SubResource("StandardMaterial3D_uc1xx")
+
+[node name="CSGSphere3D6" type="CSGSphere3D" parent="CSGCylinder3D"]
+transform = Transform3D(0.7621488, 0, -0.64740187, 0, 1, 0, 0.64740187, 0, 0.7621488, -0.6467073, 0.68780994, -0.73626745)
+radius = 0.57132316
+material = SubResource("StandardMaterial3D_d2g23")
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(-0.8435134, 0.39919305, 0.35934693, -2.1973568e-08, 0.6690399, -0.7432266, -0.53710836, -0.6269215, -0.5643439, 0.32821006, 0.23994064, -0.4251465)
+radius = 0.09033203
+height = 0.8881836
+cone = true
+material = SubResource("StandardMaterial3D_uc1xx")
+
+[node name="CSGSphere3D7" type="CSGSphere3D" parent="CSGCylinder3D"]
+transform = Transform3D(-0.44774342, 0, -0.89416206, 0, 1, 0, 0.89416206, 0, -0.44774342, 0.5718526, 0.68780994, -0.79080737)
+radius = 0.4967895
+material = SubResource("StandardMaterial3D_d2g23")
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(0.73374194, 0.50496936, 0.4545647, -2.1973564e-08, 0.6690399, -0.7432266, -0.6794284, 0.5453362, 0.49090266, 0.3043537, 0.23994064, 0.41948193)
+radius = 0.09033203
+height = 0.8881836
+cone = true
+material = SubResource("StandardMaterial3D_uc1xx")
+
+[node name="CSGSphere3D8" type="CSGSphere3D" parent="CSGCylinder3D"]
+transform = Transform3D(-0.7511143, 0, 0.6601721, 0, 1, 0, -0.6601721, 0, -0.7511143, 0.5961392, 0.68780994, 0.7480102)
+radius = 0.4970856
+material = SubResource("StandardMaterial3D_d2g23")
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(0.8343287, -0.40971637, -0.36881995, -1.0589579e-07, 0.6690398, -0.7432267, 0.55126745, 0.6200952, 0.558199, -0.33822873, 0.18252671, 0.36726657)
+radius = 0.09033203
+height = 1.0598145
+cone = true
+material = SubResource("StandardMaterial3D_uc1xx")
+
+[node name="CSGSphere3D9" type="CSGSphere3D" parent="CSGCylinder3D"]
+transform = Transform3D(0.46277, 0, 0.8864784, 0, 1, 0, -0.8864784, 0, 0.46277, -0.62316775, 0.68780994, 0.7819773)
+radius = 0.60621005
+material = SubResource("StandardMaterial3D_d2g23")
+
+[node name="CSGSphere3D5" type="CSGSphere3D" parent="CSGCylinder3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.85800326, 1.0598487, -0.05413562)
+radius = 0.45905298
+material = SubResource("StandardMaterial3D_44ud8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.44274902, 0)
+shape = SubResource("CylinderShape3D_ind6k")

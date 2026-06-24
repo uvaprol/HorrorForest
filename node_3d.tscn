@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://buh0toftxo30p"]
+
+[ext_resource type="PackedScene" uid="uid://dckdm6o1raxhr" path="res://ground.tscn" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://cp1q4ffroyjw" path="res://player.tscn" id="2_noarx"]
+[ext_resource type="PackedScene" uid="uid://cdsotn4nv0bie" path="res://tree.tscn" id="3_a0tk4"]
+
+[sub_resource type="Environment" id="Environment_a0tk4"]
+fog_enabled = true
+fog_light_color = Color(0.20051634, 0.22125834, 0.25353256, 1)
+fog_light_energy = 0.5
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" parent="." instance=ExtResource("1_a202f")]
+transform = Transform3D(500, 0, 0, 0, 1, 0, 0, 0, 500, 0, 0, 0)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_noarx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.720882, 5.8738117, 42.194347)
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
+
+[node name="StaticBody3D2" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 218.27522, 10.233002, 157.50833)
+
+[node name="StaticBody3D4" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 176.99916, 10.233002, 50.384964)
+
+[node name="StaticBody3D8" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 132.00488, 10.233002, -70.64548)
+
+[node name="StaticBody3D9" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 29.613739, 10.233002, -97.76511)
+
+[node name="StaticBody3D10" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, -98.47519, 10.232986, -55.81041)
+
+[node name="StaticBody3D11" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, -152.98782, 10.232971, 19.652542)
+
+[node name="StaticBody3D12" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, -97.493225, 10.232956, 174.64842)
+
+[node name="StaticBody3D13" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 21.506775, 10.232956, 120.64842)
+
+[node name="StaticBody3D14" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, -89.493225, 10.232956, -155.35158)
+
+[node name="StaticBody3D15" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 104.506775, 10.232956, -189.35158)
+
+[node name="StaticBody3D16" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 154.50677, 10.232956, 182.64842)
+
+[node name="StaticBody3D5" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 120.961716, 10.233002, 116.078125)
+
+[node name="StaticBody3D6" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 56.206314, 10.233002, 171.68045)
+
+[node name="StaticBody3D7" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, -60.82611, 10.233002, 81.891716)
+
+[node name="StaticBody3D3" parent="MultiMeshInstance3D" instance=ExtResource("3_a0tk4")]
+transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 246.63965, 10.233002, 117.70235)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_a0tk4")
