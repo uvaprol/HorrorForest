@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://buh0toftxo30p"]
+[gd_scene load_steps=6 format=3 uid="uid://buh0toftxo30p"]
 
 [ext_resource type="PackedScene" uid="uid://dckdm6o1raxhr" path="res://ground.tscn" id="1_a202f"]
 [ext_resource type="PackedScene" uid="uid://cp1q4ffroyjw" path="res://player.tscn" id="2_noarx"]
 [ext_resource type="PackedScene" uid="uid://cdsotn4nv0bie" path="res://tree.tscn" id="3_a0tk4"]
+[ext_resource type="PackedScene" uid="uid://dn8xwsrrg1kb0" path="res://suz.tscn" id="4_r3fl7"]
 
 [sub_resource type="Environment" id="Environment_a0tk4"]
 fog_enabled = true
@@ -14,7 +15,7 @@ fog_light_energy = 0.5
 [node name="StaticBody3D" parent="." instance=ExtResource("1_a202f")]
 transform = Transform3D(500, 0, 0, 0, 1, 0, 0, 0, 500, 0, 0, 0)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("2_noarx")]
+[node name="PLAYER" parent="." instance=ExtResource("2_noarx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.720882, 5.8738117, 42.194347)
 
 [node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
@@ -66,3 +67,47 @@ transform = Transform3D(6.135, 0, 0, 0, 6.135, 0, 0, 0, 6.135, 246.63965, 10.233
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_a0tk4")
+
+[node name="MultiMeshInstance3D2" type="MultiMeshInstance3D" parent="."]
+
+[node name="CharacterBody3D2" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.53533, 3.7794962, 69.43711)
+
+[node name="CharacterBody3D3" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.02984, 3.7794962, 16.948143)
+
+[node name="CharacterBody3D4" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.52485, 3.7794962, -66.10471)
+
+[node name="CharacterBody3D5" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.619133, 3.7794962, 107.73742)
+
+[node name="CharacterBody3D6" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.252754, 3.7794962, 162.05371)
+
+[node name="CharacterBody3D7" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 176.88522, 3.7794962, -71.25821)
+
+[node name="CharacterBody3D8" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 153.24173, 3.7794962, 139.78519)
+
+[node name="CharacterBody3D9" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.83258, 3.7794962, 209.67165)
+
+[node name="CharacterBody3D10" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -154.36594, 3.7794962, 195.36942)
+
+[node name="CharacterBody3D11" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -187.1701, 3.7794962, -179.01624)
+
+[node name="CharacterBody3D12" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5453339, 3.7795115, -199.35956)
+
+[node name="CharacterBody3D13" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 207.30016, 3.7795115, -161.0011)
+
+[node name="CharacterBody3D14" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 190.37976, 3.7795115, 200.27966)
+
+[node name="CharacterBody3D15" parent="MultiMeshInstance3D2" instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -174.04126, 3.7795115, 87.027664)

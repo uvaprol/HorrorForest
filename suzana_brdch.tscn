@@ -3,3 +3,13 @@
 [ext_resource type="PackedScene" uid="uid://cwswuyswltwh6" path="res://suzana brdch.glb" id="1_p5akh"]
 
 [node name="suzana brdch" instance=ExtResource("1_p5akh")]
+
+[node name="Skeleton3D" parent="Арматура" index="0"]
+bones/2/rotation = Quaternion(0.14258927, -0.1032964, 0.17831054, 0.96809274)
+bones/3/rotation = Quaternion(0.6497005, -0.082939886, 0.21139637, 0.7254804)
+bones/5/rotation = Quaternion(0.70314574, 0.21103081, 0.14804257, 0.66267306)
+bones/6/rotation = Quaternion(0.0026832707, 0.028564079, -0.0005509554, 0.9995882)
+bones/8/rotation = Quaternion(-0.5802772, 0.023217227, 0.03328983, 0.8134071)
+bones/9/rotation = Quaternion(0.019638445, -0.0057064528, 0.012487326, 0.9997129)
+bones/11/rotation = Quaternion(-0.56251544, 0.020649338, 0.0014720219, 0.82652754)
+bones/12/rotation = Quaternion(-0.027812965, -0.0041002724, -0.0690803, 0.9972149)
