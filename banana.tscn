@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b20frdjwvjx7c"]
+
+[ext_resource type="PackedScene" uid="uid://dqt2dqjgeom5w" path="res://banana.glb" id="1_mb6cj"]
+
+[node name="banana" instance=ExtResource("1_mb6cj")]
+
+[node name="AnimationPlayer" parent="." index="1"]
+speed_scale = 0.1
